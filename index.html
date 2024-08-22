@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengurusan Pembekal ePerolehan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pengurusan Pembekal ePerolehan</h1>
+    
+    <form id="supplierForm">
+        <label for="supplierName">Nama Pembekal:</label>
+        <input type="text" id="supplierName" placeholder="Nama Pembekal" required>
+
+        <label for="supplierContact">Nombor Telefon:</label>
+        <input type="text" id="supplierContact" placeholder="Nombor Telefon Pembekal" required>
+
+        <label for="supplierEmail">Email:</label>
+        <input type="email" id="supplierEmail" placeholder="Email Pembekal" required>
+
+        <label for="supplierAddress">Alamat:</label>
+        <textarea id="supplierAddress" placeholder="Alamat Pembekal" required></textarea>
+
+        <button type="submit">Hantar Permohonan</button>
+    </form>
+
+    <input type="text" id="searchBox" placeholder="Cari pembekal...">
+
+    <h2>Senarai Pembekal</h2>
+    <table id="supplierTable">
+        <thead>
+            <tr>
+                <th>Nama Pembekal</th>
+                <th>Telefon</th>
+                <th>Email</th>
+                <th>Alamat</th>
+                <th>Status</th>
+                <th>Tindakan</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
